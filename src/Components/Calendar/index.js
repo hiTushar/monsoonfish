@@ -4,7 +4,7 @@ import 'react-calendar/dist/Calendar.css';
 import Holidays from 'date-holidays';
 import moment from 'moment';
 import './index.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export default function CalendarComponent(props) {
@@ -12,7 +12,8 @@ export default function CalendarComponent(props) {
     const [holidays, setHolidays] = useState([]);
     const [details, setDetails] = useState('');
     const [addHolidayModal, setAddHolidayModal] = useState(false);
-    const newHoliday = useRef({});
+    const newHoliday = useRef({ title: '', desc: '' });
+    const [error, setError] = useState(false);
 
     useEffect(() => {
         if(date) {
@@ -25,7 +26,6 @@ export default function CalendarComponent(props) {
             if(customHolidayList) {
                 holidaysToday = holidaysToday.concat(customHolidayList);
             }
-            console.log({holidaysToday});
             setHolidays(holidaysToday);
             setDetails('');
         }
@@ -37,6 +37,10 @@ export default function CalendarComponent(props) {
 
     function addHoliday(e) {
         e.preventDefault();
+        if(!newHoliday.current.title.length || !newHoliday.current.desc.length) {
+            setError(true);
+            return;
+        }
         let currentDate = moment(date).startOf('day').valueOf();
         let customHolidayList = JSON.parse(localStorage.getItem(currentDate));
         if(!customHolidayList) {
@@ -48,8 +52,9 @@ export default function CalendarComponent(props) {
         let holidaysToday = holidays.concat(customHolidayList);
         setHolidays(holidaysToday);
         setAddHolidayModal(false);
+        setError(false);
     }
-    console.log({ details });
+
     // ref: https://blog.logrocket.com/react-calendar-tutorial-build-customize-calendar/
     return (
         <div className='calendar-container'>
@@ -94,6 +99,11 @@ export default function CalendarComponent(props) {
                                     <button type='submit' onClick={addHoliday}>
                                         Add
                                     </button>
+                                    {
+                                        error ? (
+                                            <p className='error'>Fill all the details!!</p>
+                                        ) : null
+                                    }
                                 </div>
                             </form>
                         </div>

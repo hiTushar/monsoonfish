@@ -138,6 +138,13 @@
 .submit-div {
     display: flex;
     justify-content: end;
+    position: relative;
+}
+
+.submit-div .error {
+    position: absolute;
+    color: red;
+    left: 5px;
 }
 
 .modal .box button {
