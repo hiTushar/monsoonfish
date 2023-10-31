@@ -1,3 +1,10 @@
+## Steps to run   
+- npm i
+- npm run
+
+## Screenshot   
+![screenshot](./src/images/Screenshot%202023-10-31%20at%207.39.38%20PM.png)
+
 ## Remarks   
 - for charts, I have used Chart.js library   
 - for calendar, react-calendar library   
