@@ -1,3 +1,9 @@
+## Remarks   
+- for charts, I have used Chart.js library   
+- for calendar, react-calendar library   
+- all style is done using just css. 
+
+## Task    
 Part 1
 
 •Create a calendar using React
