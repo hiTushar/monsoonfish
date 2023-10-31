@@ -10,6 +10,7 @@ import {
     Legend,
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
+// import { faker } from '@faker-js/faker';
 import './index.css'
 
 ChartJS.register(
@@ -45,7 +46,7 @@ const dataOne = {
         {
             fill: true,
             label: 'Model Capacity',
-            data: [0, 28000, 12000, 10000, 34000, 21000, 24000, 19000, 20000, 18000, 6900],
+            data: [0, 28000, 12000, 10000, 34000, 21000, 24000, 19000, 20000, 18000, 6900], // labelsOne.map(label => faker.number.int({ min: 0, max: 70000 }))
             borderColor: 'rgb(255 42 63)',
             backgroundColor: 'rgb(255, 42, 63, 0.2)',
             tension: 0.4 // https://stackoverflow.com/questions/63395038/chart-js-how-to-make-sharp-lines-to-smooth-curved-lines
@@ -53,7 +54,7 @@ const dataOne = {
         {
             fill: true,
             label: 'Peak Date',
-            data: [0, 69100, 4000, 3500, 12000, 6910, 7100, 7100, 6900, 8000, 5000],
+            data: [0, 69100, 4000, 3500, 12000, 6910, 7100, 7100, 6900, 8000, 5000], // labelsOne.map(label => faker.number.int({ min: 0, max: 70000 }))
             borderColor: 'rgb(226 226 226)',
             backgroundColor: 'rgb(226, 226, 226, 0.2)',
             tension: 0.4
@@ -61,7 +62,7 @@ const dataOne = {
         {
             fill: true,
             label: '2016-07-06',
-            data: [0, 3500, 6900, 2000, 10000, 6910, 7100, 7100, 6900, 8000, 5000],
+            data: [0, 3500, 6900, 2000, 10000, 6910, 7100, 7100, 6900, 8000, 5000], // labelsOne.map(label => faker.number.int({ min: 0, max: 70000 }))
             borderColor: 'rgb(141, 188, 208)',
             backgroundColor: 'rgb(141, 188, 208, 0.2)',
             tension: 0.4
