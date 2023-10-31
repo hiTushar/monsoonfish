@@ -12,6 +12,7 @@ import {
 import { Line } from 'react-chartjs-2';
 // import { faker } from '@faker-js/faker';
 import './index.css'
+import { Link } from 'react-router-dom';
 
 ChartJS.register(
     CategoryScale,
@@ -89,9 +90,16 @@ const dataTwo = {
 // ref: https://react-chartjs-2.js.org/examples/area-chart 
 export default function ChartComponent(props) {
     return (
-        <div className='container'>
-            <Line options={options} data={dataOne} />
-            <Line options={options} data={dataTwo} />
+        <div className='chart-container'>
+            <div className='navbar'>
+                <Link to='/'>Home</Link>
+            </div>
+            <div className='chart'>
+                <Line options={options} data={dataOne} />
+            </div>
+            <div className='chart'>
+                <Line options={options} data={dataTwo} />
+            </div>
         </div>
     )
 }

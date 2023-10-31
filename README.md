@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+Part 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+•Create a calendar using React
 
-## Available Scripts
+•Add the bank holiday list to the calendar. So when we look at any month of 2023 we should see the holidays marked out. Clicking on them should provide some basic info about the holiday.
 
-In the project directory, you can run:
+•Give the user the ability to add additional holidays to the calendar. Add a button that on click will add a Holiday on the selected date (persist the data in local storage).
 
-### `npm start`
+ 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Part 2 **
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Make a line chart just like the below charts (Graph design).
 
-### `npm test`
+You can have more than one line in the chart with random data.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A fill of some gradient color would be considered a plus point.
 
-### `npm run build`
+**code in tsx will be a bonus.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Other details:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can use a js library / build the above-mentioned from scratch.
 
-### `npm run eject`
+You can make as many changes as possible, show your creativity, and make it visually appealing.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+•Comment your code. Indent it well.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+•Put the references or web links used to create that section within the code comments. So if you use some online tutorial for making calendar and graph, put it in.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+•The idea is to see your logic and quality of code and the understanding of aesthetics and design.

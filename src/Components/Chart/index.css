@@ -1,4 +1,22 @@
-.container {
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 50px;
+    
+}
+
+.navbar {
+    position: fixed;
+    padding: 10px;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+.chart-container .chart {
     width: 1000px;
-    margin: 0 auto;
 }
