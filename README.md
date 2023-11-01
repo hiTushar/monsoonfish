@@ -1,6 +1,6 @@
 ## Steps to run   
 - npm i
-- npm run
+- npm start
 
 ## Screenshot   
 ![screenshot](./src/images/Screenshot%202023-10-31%20at%207.39.38%20PM.png)
